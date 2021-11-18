@@ -79,8 +79,22 @@ div.recherche:hover, div.menu:hover{
 	color: black;
 	padding: 3%;
 }
+article .bde-zoom{
+	display: flex;
+	margin: auto;
+}
 .bde{
-	width: 10vw;
+	width: 100%;
+	transition: transform .1s;
+}
+.bde-zoom{
+	width: 200px;
+	overflow: hidden;
+	}
+.bde:hover{
+	-ms-transform: scale(3) translate(30px); /* IE 9 */
+	-webkit-transform: scale(3) translate(30px); /* Safari 3-8 */
+	transform: scale(3) translate(30px);
 }
 .Top_article article:hover{
 	background-color: white;
@@ -95,4 +109,24 @@ div.recherche:hover, div.menu:hover{
 .icone p{
 	color: black;
 	font-size: 0.6em;
+}
+
+article h2 {
+	margin: 2%;
+    text-decoration:none;
+    font-size: 1.3em;
+    color: #444444;
+}
+article h2:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+article h2:hover:after {
+  width: 50%;
+  background: #444;
 }
