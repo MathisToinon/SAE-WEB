@@ -77,7 +77,7 @@ div.recherche:hover, div.menu:hover{
 	text-align: center;
 	margin: 5%;
 	color: black;
-	padding: 3%;
+	cursor: pointer;
 }
 article .bde-zoom{
 	display: flex;
@@ -88,13 +88,13 @@ article .bde-zoom{
 	transition: transform .1s;
 }
 .bde-zoom{
-	width: 200px;
+	width: 100%;
 	overflow: hidden;
 	}
-.bde:hover{
-	-ms-transform: scale(3) translate(30px); /* IE 9 */
-	-webkit-transform: scale(3) translate(30px); /* Safari 3-8 */
-	transform: scale(3) translate(30px);
+.Top_article article:hover .bde{
+	-ms-transform: scale(2) translate(0px); /* IE 9 */
+	-webkit-transform: scale(2) translate(0px); /* Safari 3-8 */
+	transform: scale(2) translate(0px);
 }
 .Top_article article:hover{
 	background-color: white;
@@ -110,7 +110,9 @@ article .bde-zoom{
 	color: black;
 	font-size: 0.6em;
 }
-
+article h3, article .icone{
+	padding: 0% 3% 3% 3%;
+}
 article h2 {
 	margin: 2%;
     text-decoration:none;
