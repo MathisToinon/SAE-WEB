@@ -2,8 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+
 header{
-	background-image: url("image_presentation.jpg");
+	background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 17%, rgba(0,0,0,0.35057773109243695) 100%),url("image_presentation.jpg");
+    height: 100vh;
 }
 
 i{
@@ -41,5 +43,3 @@ p{
 div.recherche:hover, div.menu:hover{
 	background-color: grey;
 }
-
-
