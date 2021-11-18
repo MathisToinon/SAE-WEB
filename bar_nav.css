@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Canela;
+	font-family: arial;
 }
 body{
 	width: 100%;
@@ -57,7 +57,7 @@ div.menu{
 img.logo{
 	width: 200px;
 }
-p{
+nav p{
 	margin-left: 50px;
 	display: flex;
 	align-items: center;
@@ -100,6 +100,9 @@ article .bde-zoom{
 	background-color: white;
 	
 }
+.Top_article article:hover i{
+	color:#1e1e1e;
+}
 .icone{
 	display: flex;
 	font-size: 200%;
@@ -107,11 +110,13 @@ article .bde-zoom{
 	margin-top: 5%;
 }
 .icone p{
-	color: black;
+	margin: 2px 0 0 10px;
+	color: #444444;
 	font-size: 0.6em;
 }
 article h3, article .icone{
 	padding: 0% 3% 3% 3%;
+	color:#444444;
 }
 article h2 {
 	margin: 2%;
@@ -132,3 +137,6 @@ article h2:hover:after {
   width: 50%;
   background: #444;
 }
+@media screen and (min-width: 900px) {
+	
+  }
