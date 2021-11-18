@@ -26,8 +26,6 @@ p, article{
 
 header{
 	background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.35057773109243695) 90%),url("image_presentation.jpg");
-    height: 145vh;
-	background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0.35057773109243695) 70%),url("image_presentation.jpg");
 	background-size: 100%;
     height: 135vh;
 }
@@ -73,33 +71,10 @@ div.recherche:hover, div.menu:hover{
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	color: black;
+	margin-top: 5em;
 }
-.article_1{
+.Top_article article{
 	background-color: rgb(194, 192, 192);
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	text-align: center;
-	margin: 5%;
-	color: black;
-}
-.article_2{
-	background-color: rgb(194, 192, 192);
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	text-align: center;
-	margin: 5%;
-	color: black;
-}
-.article_3{
-	background-color: rgb(194, 192, 192);
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 2;
 	text-align: center;
 	margin: 5%;
 	color: black;
@@ -107,6 +82,6 @@ div.recherche:hover, div.menu:hover{
 .bde{
 	width: 10vw;
 }
-.article_1:hover, .article_2:hover, .article_3:hover{
+.Top_article article:hover{
 	background-color: white;
 }
