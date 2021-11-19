@@ -6,6 +6,7 @@
 body{
 	width: 100%;
 	background-color: rgb(218, 218, 218);
+	height:auto
 }
 p, article{
 	color: white;
@@ -27,13 +28,15 @@ p, article{
 header{
 	background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.35057773109243695) 70%),url("image_presentation.jpg");
 	background-size: 100%;
-    height: 125vh;
+	height: 100vh;
 }
 
 i{
 	margin-right: 5px
 }
-
+div.notification{
+	visibility: hidden;
+}
 
 nav{
 	display: flex;
@@ -133,10 +136,34 @@ article h2:after {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
-article h2:hover:after {
+article:hover h2:after {
   width: 50%;
   background: #444;
 }
-@media screen and (min-width: 900px) {
-	
-  }
+@media screen and (max-width: 900px) {
+	div.recherche,
+div.menu{
+	justify-content: right;
+	align-items: center;
+	display: flex;
+	background-color: transparent;
+	color: white;
+	width:  0px;
+	height: 0px;
+	padding: 20px;
+}
+nav p{
+	display: none;
+}
+div.notification{
+	justify-content: right;
+	align-items: center;
+	display: flex;
+	background-color: transparent;
+	color: red;
+	width:  0px;
+	height: 0px;
+	visibility: visible;
+	padding: 20px;
+}
+}
