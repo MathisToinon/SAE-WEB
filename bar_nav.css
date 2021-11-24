@@ -58,6 +58,7 @@ div.notification{
 	transition: top 0.1s;
 	background-color: white;
 	transition: 0.3s;
+	z-index: 1;
 }
 
 #nav.isTop{
@@ -169,7 +170,7 @@ div.menu{
 	align-items: center;
 	display: flex;
 	background-color: transparent;
-	color: white;
+	color: #444;
 	width:  0px;
 	height: 0px;
 	padding: 20px;
