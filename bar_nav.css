@@ -8,13 +8,18 @@ body{
 	background-color: rgb(218, 218, 218);
 	height:auto
 }
-/* .menu_deroule{
+#menu_deroule{
+	display: none;
 	height: 100%;
 	width: 100%;
 	background-color: #1e1e1e;
 	position: absolute;
 	color: white;
-} */
+}
+#menu_deroule:target {
+	display: block;
+}
+
 
 p, article{
 	color: white;
@@ -56,7 +61,7 @@ div.notification{
 	justify-content: space-between;
 	position: fixed;
 	transition: top 0.1s;
-	background-color: white;
+	background-color: rgb(218, 218, 218);
 	transition: 0.3s;
 	z-index: 1;
 }
@@ -70,7 +75,8 @@ div.notification{
 	display: flex;
 }
 
-div.recherche, div.menu{
+button{
+	border: none;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -88,7 +94,7 @@ nav p{
 	display: flex;
 	align-items: center;
 }
-div.recherche:hover, div.menu:hover{
+button:hover{
 	background-color: rgb(138, 135, 135);
 }
 
@@ -164,29 +170,28 @@ article:hover h2:after {
   background: #444;
 }
 @media screen and (max-width: 900px) {
-	div.recherche,
-div.menu{
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	background-color: transparent;
-	color: #444;
-	width:  0px;
-	height: 0px;
-	padding: 20px;
-}
-nav p{
-	display: none;
-}
-div.notification{
-	justify-content: right;
-	align-items: center;
-	display: flex;
-	background-color: transparent;
-	color: rgb(209, 12, 12);
-	width:  0px;
-	height: 0px;
-	visibility: visible;
-	padding: 20px;
-}
+	button{
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background-color: transparent;
+		color: #444;
+		width:  0px;
+		height: 0px;
+		padding: 20px;
+	}
+	nav p{
+		display: none;
+	}
+	div.notification{
+		justify-content: right;
+		align-items: center;
+		display: flex;
+		background-color: transparent;
+		color: rgb(209, 12, 12);
+		width:  0px;
+		height: 0px;
+		visibility: visible;
+		padding: 20px;
+	}
 }
