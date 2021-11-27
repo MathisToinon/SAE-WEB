@@ -16,3 +16,16 @@ if(currentScrollPos===0){
 }
 }
 
+
+
+
+
+let menu = document.getElementById("menu");
+let menu_deroule = document.getElementById("menu_deroule");
+menu.addEventListener("click", () => {
+  if(getComputedStyle(menu_deroule).display != "none"){
+    menu_deroule.style.display = "none";
+  } else {
+    menu_deroule.style.display = "block";
+  }
+})
