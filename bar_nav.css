@@ -9,49 +9,7 @@ body{
 	height:auto
 }
 
-/* vvvvvvvvvvv menu modal vvvvvvvvvvv */
 
-@keyframes movingTopToBottom {
-	0% {
-	  top: -100%;
-	}
-	100% {
-	  top: 0%;
-	}
-}
-
-@keyframes opacity {
-	0% {
-		opacity: 0%;
-	}
-	100% {
-		opacity: 100%;
-	}
-}
-
-.menumodal{
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	background-color: rgb(255, 9, 9);
-	width: 100%;
-	height: 100%;
-	justify-content: space-evenly;
-	padding-left: 10%;
-	animation: movingTopToBottom 1s ease;
-}
-
-.menumodal > p {
-	font-size: 30px;
-	font-family: arial;
-	animation: opacity 1s ease-in;
-}
-
-.close {
-
-}
-
-/* ^^^^^^^^^^ menu modal ^^^^^^^^^^ */
 
 p, article{
 	color: white;
@@ -201,6 +159,67 @@ article:hover h2:after {
   width: 50%;
   background: #444;
 }
+
+
+/* vvvvvvvvvvv menu modal vvvvvvvvvvv */
+.menumodal{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	background-color: #708090;
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	padding-left: 10%;
+	animation: movingTopToBottom 1s ease;
+}
+
+ .menumodal button {
+	background-color: transparent;
+}
+.menumodal button > i{
+	font-size: 500%;
+}
+.menumodal button > i {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition:         transform .8s ease-in-out;
+  }
+.menumodal button > i:hover {
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+}
+
+.menumodal p {
+	font-size: 30px;
+	font-family: arial;
+	animation: opacity 1s ease-in;
+}
+
+.close {
+
+}
+
+@keyframes movingTopToBottom {
+	0% {
+	  top: -100%;
+	}
+	100% {
+	  top: 0%;
+	}
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+
+
+/* ^^^^^^^^^^ menu modal ^^^^^^^^^^ */
 @media screen and (max-width: 900px) {
 	button{
 		justify-content: center;
