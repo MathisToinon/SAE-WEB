@@ -8,16 +8,50 @@ body{
 	background-color: rgb(218, 218, 218);
 	height:auto
 }
-#menu_deroule{
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #1e1e1e;
-	position: absolute;
-	top: 50%; left: 50%; /* à 50%/50% du parent référent */
-  	transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-	color: white;
+
+/* vvvvvvvvvvv menu modal vvvvvvvvvvv */
+
+@keyframes movingTopToBottom {
+	0% {
+	  top: -100%;
+	}
+	100% {
+	  top: 0%;
+	}
 }
+
+@keyframes opacity {
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+.menumodal{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	background-color: rgb(255, 9, 9);
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	padding-left: 10%;
+	animation: movingTopToBottom 1s ease;
+}
+
+.menumodal > p {
+	font-size: 30px;
+	font-family: arial;
+	animation: opacity 1s ease-in;
+}
+
+.close {
+
+}
+
+/* ^^^^^^^^^^ menu modal ^^^^^^^^^^ */
 
 p, article{
 	color: white;

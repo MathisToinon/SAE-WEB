@@ -1,6 +1,6 @@
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
   } else {
@@ -8,24 +8,11 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 
-if(currentScrollPos===0){
+  if (currentScrollPos === 0) {
     document.getElementById("nav").classList.add('isTop')
-}else{
+  } else {
     document.getElementById("nav").classList.remove('isTop')
 
-}
-}
-
-
-
-
-
-let menu = document.getElementById("menu");
-let menu_deroule = document.getElementById("menu_deroule");
-menu.addEventListener("click", () => {
-  if(getComputedStyle(menu_deroule).display != "none"){
-    menu_deroule.style.display = "none";
-  } else {
-    menu_deroule.style.display = "block";
   }
-})
+}
+
