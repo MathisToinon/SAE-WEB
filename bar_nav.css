@@ -88,6 +88,8 @@ button:hover{
 	background-color: rgb(138, 135, 135);
 }
 
+/* vvvvvvvvvvv top article vvvvvvvvvvv */
+
 .Top_article{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -160,8 +162,34 @@ article:hover h2:after {
   background: #444;
 }
 
+/* vvvvvvvvvvv fenetre recherche modal vvvvvvvvvvv */
 
-/* vvvvvvvvvvv menu modal vvvvvvvvvvv */
+.searchbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:  500px;
+	height: 75px;
+	position: fixed;
+	right: 200px;
+	top: 0px;
+	animation: opacity 0.5s ease;
+	outline: oldlace;
+}
+
+.searchbar input {
+	width: 300px;
+	font-size: 40px ;
+	background-color: black;
+	color: white;
+	padding: 0px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+}
+
+/* vvvvvvvvvvv fenetre menu modal vvvvvvvvvvv */
+
 .menumodal{
 	display: flex;
 	flex-direction: column;
@@ -172,6 +200,8 @@ article:hover h2:after {
 	justify-content: space-evenly;
 	padding-left: 10%;
 	animation: movingTopToBottom 1s ease;
+	top: 0px;
+	left: 0px;
 }
 
  .menumodal button {
@@ -195,9 +225,7 @@ article:hover h2:after {
 	animation: opacity 1s ease-in;
 }
 
-.close {
-
-}
+/* vvvvvvvvvvv animation keyframes vvvvvvvvvvv */
 
 @keyframes movingTopToBottom {
 	0% {
@@ -219,7 +247,8 @@ article:hover h2:after {
 
 
 
-/* ^^^^^^^^^^ menu modal ^^^^^^^^^^ */
+/* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
+
 @media screen and (max-width: 900px) {
 	button{
 		justify-content: center;
