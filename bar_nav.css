@@ -5,8 +5,6 @@
 }
 body{
 	width: 100%;
-	background-color: rgb(218, 218, 218);
-	height:auto
 }
 
 
@@ -28,7 +26,7 @@ p, article{
 }
 
 header{
-	background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.35057773109243695) 70%),url("image_presentation.jpg");
+	background-image:linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 0%, rgba(14,14,14,0.35057773109243695) 70%),url("image_presentation.jpg");
 	background-size: 100%;
 	height: 100vh;
 	background-size: cover;
@@ -85,24 +83,26 @@ nav p{
 	align-items: center;
 }
 button:hover{
-	background-color: rgb(138, 135, 135);
+	background-color: rgb(49, 49, 49);
 }
 
 /* vvvvvvvvvvv top article vvvvvvvvvvv */
 
+
 .Top_article{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	margin-top: 5em;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #0e0e0e;
+	padding-top: 100px;
 }
 .Top_article article{
-	background-color: rgb(194, 192, 192);
+	background-color: #1e1e1e;
 	text-align: center;
-	margin: 5%;
 	color: black;
 	cursor: pointer;
+	max-width: 25%;
 }
+
 article .bde-zoom{
 	display: flex;
 	margin: auto;
@@ -121,11 +121,11 @@ article .bde-zoom{
 	transform: scale(2) translate(0px);
 }
 .Top_article article:hover{
-	background-color: white;
+	background-color: #484e54;
 	
 }
 .Top_article article:hover i{
-	color:#1e1e1e;
+	color: white;
 }
 .icone{
 	display: flex;
@@ -135,18 +135,18 @@ article .bde-zoom{
 }
 .icone p{
 	margin: 2px 0 0 10px;
-	color: #444444;
+	color: white;
 	font-size: 0.6em;
 }
 article h3, article .icone{
 	padding: 0% 3% 3% 3%;
-	color:#444444;
+	color : white;
 }
 article h2 {
 	margin: 2%;
     text-decoration:none;
     font-size: 1.3em;
-    color: #444444;
+    color: white;
 }
 article h2:after {
   content: '';
@@ -159,7 +159,21 @@ article h2:after {
 }
 article:hover h2:after {
   width: 50%;
-  background: #444;
+  background: white;
+}
+
+.menumodal p:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.menumodal p:hover:after {
+  width: 100%;
+  background: white;
 }
 
 /* vvvvvvvvvvv fenetre recherche modal vvvvvvvvvvv */
@@ -223,6 +237,7 @@ article:hover h2:after {
 	font-size: 30px;
 	font-family: arial;
 	animation: opacity 1s ease-in;
+	max-width: fit-content;
 }
 
 /* vvvvvvvvvvv animation keyframes vvvvvvvvvvv */
