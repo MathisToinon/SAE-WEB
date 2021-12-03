@@ -238,6 +238,24 @@ article:hover h2:after {
 	font-family: arial;
 	animation: opacity 1s ease-in;
 	max-width: fit-content;
+	cursor: pointer;
+}
+/*--------------------------footer------------------------------------*/
+footer{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #0e0e0e;
+	color: white;
+}
+footer div {
+	display: flex;
+	justify-content: center;
+}
+.excellence-techno{
+	padding-bottom: 10%;
+	max-width: 25%;
 }
 
 /* vvvvvvvvvvv animation keyframes vvvvvvvvvvv */
