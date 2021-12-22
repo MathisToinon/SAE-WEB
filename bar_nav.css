@@ -36,7 +36,7 @@ header{
 i{
 	margin-right: 5px
 }
-div.notification{
+button.notification{
 	visibility: hidden;
 	cursor: pointer;
 }
@@ -128,7 +128,7 @@ article .bde-zoom{
 }
 .icone{
 	display: flex;
-	font-size: 200%;
+	font-size: 150%;
 	text-align: left;
 	margin-top: 5%;
 }
@@ -243,6 +243,9 @@ article:hover h2:after {
 	cursor: pointer;
 	text-decoration: none;
 }
+.pageouverte{
+
+}
 /*--------------------------footer------------------------------------*/
 footer{
 	padding: 30px;
@@ -289,17 +292,21 @@ footer div {
 	button{
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 		display: flex;
 		background-color: transparent;
-		color: #444;
-		width:  0px;
-		height: 0px;
+		color: white;
+		width:  80px;
+		height: 10px;
 		padding: 20px;
+	}
+	button:hover{
+		background-color: transparent;
 	}
 	nav p{
 		display: none;
 	}
-	div.notification{
+	button.notification{
 		justify-content: right;
 		align-items: center;
 		display: flex;
@@ -309,5 +316,33 @@ footer div {
 		height: 0px;
 		visibility: visible;
 		padding: 20px;
+	}
+	button p{
+		visibility: visible;
+	}
+	.Top_article
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	 .Top_article article
+	{
+		max-width: 90%;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 600px) {
+	button p{
+		visibility: hidden;
+	}
+	button{
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background-color: transparent;
+		color: white;
+		width:  20px;
+		height: 40px;
+		padding: 10px;
 	}
 }
