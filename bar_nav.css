@@ -72,6 +72,10 @@ button{
 	width:  200px;
 	height: 75px;
 	cursor: pointer;
+	
+}
+.recherche button{
+	border-bottom-left-radius: 10px;
 }
 img.logo{
 	width: 200px;
@@ -202,6 +206,7 @@ article:hover h2:after {
 	border: none;
 	outline: none;
 	padding-left: 20px;
+	font-size: 1em;
 }
 
 /* vvvvvvvvvvv fenetre menu modal vvvvvvvvvvv */
@@ -324,7 +329,7 @@ footer div {
 	}
 	 .Top_article article
 	{
-		max-width: 90%;
+		max-width: 80%;
 		margin-bottom: 10px;
 	}
 }
