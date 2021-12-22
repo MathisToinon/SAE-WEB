@@ -1,5 +1,37 @@
-.NDL {
-    background-color:rgb(179, 25, 25);
-    height: 100px;
-    width: 100px;
+/* ------------ wrapper ------------ */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* ------------ article ------------ */
+
+.event {
+    display: flex;
+    flex-direction: row;
+    background-color:#1e1e1e;
+    height: fit-content;
+    width: 90%;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.event div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.event div p {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.event img {
+    width: 40%;
 }
