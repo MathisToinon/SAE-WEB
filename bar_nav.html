@@ -12,12 +12,12 @@
 <body>
 	<dialog id="mydialog" close>
 		<div class="menumodal">
-			<p>Academics</p>
-			<p>Campus</p>
-			<p>In Focus</p>
-			<p>Visit</p>
-			<p>About</p>
-			<p>News</p>
+			<a>Academics</a>
+			<a>Campus</a>
+			<a>In Focus</a>
+			<a>Visit</a>
+			<a href="questionnaire.html">Questionnaire</a>
+			<a>News</a>
 			<button class="close" onclick="$dialog.close()">
 				<i class="fas fa-times"></i>
 			</button>	
@@ -31,25 +31,24 @@
 		</div>
 	</dialog>
 
-
-	<nav id="nav" class="isTop">
-		<div class="cote-G">
-			<img class="logo" src="logo_iut.png">
-			<p>bonjour</p>
-		</div>
-		<div class="cote-D">
-			<div class="notification">
-				<i class="fas fa-bell"></i>
-			</div>
-			<div class="recherche">
-				<button onclick="$dialog2.showModal()"><i class="fas fa-search"></i>Recherche</button>
-			</div>
-			<div class="menu">
-				<button onclick="$dialog.showModal()"><i class="fas fa-bars"></i>Menu</button>
-			</div>
-		</div>
-	</nav>
 	<header>
+		<nav id="nav" class="isTop">
+			<div class="cote-G">
+				<img class="logo" src="logo_iut_fondnoir2.png">
+				<p>L'excellence technologique</p>
+			</div>
+			<div class="cote-D">
+				<div class="notification">
+					<i class="fas fa-bell"></i>
+				</div>
+				<div class="recherche">
+					<button onclick="$dialog2.showModal()"><i class="fas fa-search"></i>Recherche</button>
+				</div>
+				<div class="menu">
+					<button onclick="$dialog.showModal()"><i class="fas fa-bars"></i>Menu</button>
+				</div>
+			</div>
+		</nav>
 		<div class="article_main">
 			<article class="mainArt">
 				Harvard, like so many American
@@ -106,8 +105,13 @@
 </body>
 <footer>
 	<div><img class="excellence-techno" src="LOGO_HR_EC2.png"></div>
-	
-	<p><i class="far fa-copyright"></i>Tilio charrier | Mathis Toinon</p>
+	<div>
+		<p><i class="far fa-copyright"></i>Tilio charrier | Mathis Toinon</p>
+		<a href="https://www.facebook.com/IUTLyon1">Facebook</a>
+		<a href="https://www.instagram.com/iutlyon1/">Instagram</a>
+		<a href="">Facebook</a>
+		<a href="">Facebook</a>
+	</div>
 </footer>
 
 </html>

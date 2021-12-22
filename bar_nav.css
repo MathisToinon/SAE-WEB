@@ -7,9 +7,7 @@ body{
 	width: 100%;
 }
 
-
-
-p, article{
+p, article, a{
 	color: white;
 }
 .article_main{
@@ -162,7 +160,7 @@ article:hover h2:after {
   background: white;
 }
 
-.menumodal p:after {
+.menumodal a:after {
   content: '';
   display: block;
   margin: auto;
@@ -171,7 +169,7 @@ article:hover h2:after {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
-.menumodal p:hover:after {
+.menumodal a:hover:after {
   width: 100%;
   background: white;
 }
@@ -233,12 +231,13 @@ article:hover h2:after {
 			transform: rotate(360deg);
 }
 
-.menumodal p {
+.menumodal a {
 	font-size: 30px;
 	font-family: arial;
 	animation: opacity 1s ease-in;
 	max-width: fit-content;
 	cursor: pointer;
+	text-decoration: none;
 }
 /*--------------------------footer------------------------------------*/
 footer{
