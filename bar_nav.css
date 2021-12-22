@@ -195,6 +195,7 @@ article:hover h2:after {
 	top: 0px;
 	animation: opacity 0.5s ease;
 	outline: oldlace;
+	
 }
 
 .searchbar input {
@@ -207,6 +208,7 @@ article:hover h2:after {
 	outline: none;
 	padding-left: 20px;
 	font-size: 1em;
+	border-bottom-left-radius: 10px;
 }
 
 /* vvvvvvvvvvv fenetre menu modal vvvvvvvvvvv */

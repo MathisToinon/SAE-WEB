@@ -13,7 +13,7 @@
 <body>
 	<dialog id="mydialog" close>
 		<div class="menumodal">
-			<a href="bar_nav.html">Acceuil</a>
+			<a href="index.html">Acceuil</a>
             <a href="Evenement.html">Evenement</a>
 			<a href="questionnaire.html">Questionnaire</a>
 			<a>News</a>
@@ -37,14 +37,20 @@
                 <p>L'excellence technologique</p>
             </div>
             <div class="cote-D">
-                <div class="notification">
+                <button class="notification">
                     <i class="fas fa-bell"></i>
-                </div>
+                </button>
                 <div class="recherche">
-                    <button onclick="$dialog2.showModal()"><i class="fas fa-search"></i>Recherche</button>
+                    <button onclick="$dialog2.showModal()">
+                        <i class="fas fa-search"></i>
+                        <p>Recherche</p>
+                    </button>
                 </div>
                 <div class="menu">
-                    <button onclick="$dialog.showModal()"><i class="fas fa-bars"></i>Menu</button>
+                    <button onclick="$dialog.showModal()">
+                        <i class="fas fa-bars"></i>
+                        <p>Menu</p>
+                    </button>
                 </div>
             </div>
         </nav>
