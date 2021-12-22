@@ -4,6 +4,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="bar_nav.css">
+    <link rel="stylesheet" type="text/css" href="cssformulaire.css">
 	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
 	<script src="navbar.js"></script>
 	<!-- <script src="js.js"></script> -->
@@ -51,19 +52,33 @@
         </nav>
 		<div class="article_main">
 			<article class="mainArt">
-				Nous voulons en savoir plus sur vous !
+                <h1>Nous voulons en savoir plus sur vous !</h1>
 			</article>
 		</div>
 	</header>
+    <form action="/my-handling-form-page" method="post">
+        <h2>Vous êtes : </h2>
+        <input type="radio" id="etudiant" name="role" value="etudiant">
+        <label for="etudiant">Etudiant à l'IUT</label>
+        <input type="radio" id="Professeur" name="role" value="Professeur">
+        <label for="Professeur">Professeur</label>
+        <input type="radio" id="Lyceen" name="role" value="lyceen">
+        <label for="Lyceen">Lycéen</label>
+        <input type="radio" id="Autre" name="role" value="Autre">
+        <label for="Autre">Autre</label>
+        
+    </form>
+    <footer>
+        <div><img class="excellence-techno" src="LOGO_HR_EC2.png"></div>
+        <div>
+            <p><i class="far fa-copyright"></i>Tilio charrier | Mathis Toinon</p>
+            <a href="https://www.instagram.com/iutlyon1/"> Instagram </a>
+            <a href="https://www.facebook.com/IUTLyon1"> Facebook </a>
+        </div>
+    </footer>
 </body>
-<footer>
-	<div><img class="excellence-techno" src="LOGO_HR_EC2.png"></div>
-	<div>
-		<p><i class="far fa-copyright"></i>Tilio charrier | Mathis Toinon</p>
-		<a href="https://www.instagram.com/iutlyon1/"> Instagram </a>
-		<a href="https://www.facebook.com/IUTLyon1"> Facebook </a>
-	</div>
-</footer>
+
+
 
 </html>
 
