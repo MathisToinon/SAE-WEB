@@ -240,7 +240,7 @@ article:hover h2:after {
 .menumodal button > i{
 	font-size: 500%;
 	position: absolute;
-	top: 60px; left: 1350px;
+	top: 5%; left: 82%;
 }
 .menumodal button > i {
 	-webkit-transition: -webkit-transform .8s ease-in-out;

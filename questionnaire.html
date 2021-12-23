@@ -56,26 +56,36 @@
         </nav>
 		<div class="article_main">
 			<article class="mainArt">
-                <h1>Nous voulons en savoir plus sur vous !</h1>
+                <h1>Vous avez des questions on y réponds !</h1>
 			</article>
 		</div>
 	</header>
-    <form action="/my-handling-form-page" method="post">
-        <h2>Vous êtes : </h2>
-        <input type="radio" id="etudiant" name="role" value="etudiant">
-        <label for="etudiant">Etudiant à l'IUT</label>
-        <input type="radio" id="Professeur" name="role" value="Professeur">
-        <label for="Professeur">Professeur</label>
-        <input type="radio" id="Lyceen" name="role" value="lyceen">
-        <label for="Lyceen">Lycéen</label>
-        <input type="radio" id="Autre" name="role" value="Autre">
-        <label for="Autre">Autre</label>
-        <div>
-            <label for="message">Message : </label>
-            <input type="text" id="message" name="message">
-        </div>
-        
-    </form>
+    <div class="section_apropos">
+        <img src="iut_3.jpg">
+        <form action="" method="post">
+            <div class="role">
+                <h2>Qui êtes vous ?</h2>
+                <div>   
+                    <input type="radio" id="etudiant" name="role" value="etudiant">
+                    <label for="etudiant">Etudiant</label>
+                </div>
+                <div>
+                    <input type="radio" id="professionnel" name="role" value="professionnel">
+                    <label for="professionnel">Professionnel</label>
+                </div>
+                <div>
+                    <input type="radio" id="professeur" name="role" value="professeur">
+                    <label for="professeur">Professeur</label>
+                </div>
+            </div>
+            
+            <div class="message">
+                <h2>Votre Message :</h2>
+                <input type="text" id="message" name="message">
+            </div>  
+        </form>
+    </div>
+    
     <footer>
         <div><img class="excellence-techno" src="LOGO_HR_EC2.png"></div>
         <div>

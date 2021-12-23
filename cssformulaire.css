@@ -1,4 +1,42 @@
 form{
-    text-align: center;
     color: white;
+}
+.section_apropos{
+    margin-left: 5%;
+    height: 80vh;
+}
+.section_apropos img{
+    position: absolute;
+    top: 750px;
+    max-width: 60%;
+}
+form{
+    background-color: #1d1d1d;
+    position: absolute;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    padding-right: 13%;
+    left: 50%;
+    top: 800px;
+    max-width: 40%;
+    height: min-content;
+}
+h2{
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+form div:first-child{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+div:last-child input{
+    background-color: grey;
+}
+div.role div input, div.role div label{
+    margin-left: 3px;
+}
+.message input{
+    width: 125%;
 }
