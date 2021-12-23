@@ -3,7 +3,7 @@ form{
 }
 .section_apropos{
     margin-left: 5%;
-    height: 80vh;
+    height: 90vh;
 }
 .section_apropos img{
     position: absolute;
@@ -18,7 +18,7 @@ form{
     padding-bottom: 5%;
     padding-right: 13%;
     left: 50%;
-    top: 800px;
+    top: 840px;
     max-width: 40%;
     height: min-content;
 }
