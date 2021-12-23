@@ -224,7 +224,7 @@ article:hover h2:after {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	background-color: #708090;
+	background-color: #0e0e0e;
 	width: 100%;
 	height: 100%;
 	justify-content: space-evenly;
@@ -239,6 +239,8 @@ article:hover h2:after {
 }
 .menumodal button > i{
 	font-size: 500%;
+	position: absolute;
+	top: 60px; left: 1350px;
 }
 .menumodal button > i {
 	-webkit-transition: -webkit-transform .8s ease-in-out;
@@ -259,6 +261,7 @@ article:hover h2:after {
 }
 /*--------------------------footer------------------------------------*/
 footer{
+	margin-top: 10%;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
