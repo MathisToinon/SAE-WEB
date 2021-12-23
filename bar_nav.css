@@ -48,7 +48,7 @@ button.notification{
 	justify-content: space-between;
 	position: fixed;
 	transition: top 0.1s;
-	background-color: rgb(218, 218, 218);
+	background-color: rgba(0, 0, 0, 0.377);
 	transition: 0.3s;
 	z-index: 1;
 }

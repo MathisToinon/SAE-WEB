@@ -9,6 +9,7 @@ form{
     position: absolute;
     top: 750px;
     max-width: 60%;
+    border-radius: 5px;
 }
 form{
     background-color: #1d1d1d;
@@ -21,6 +22,7 @@ form{
     top: 840px;
     max-width: 40%;
     height: min-content;
+    border-radius: 5px;
 }
 h2{
     font-size: 1em;
