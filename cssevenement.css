@@ -26,12 +26,21 @@
     margin-left: 20px;
 }
 
-.event div p {
-    display: flex;
-    align-items: center;
-    height: 100%;
+.event div span {
+    font-size: 150%;
 }
 
-.event img {
+.event div p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: justify;
+    line-height: 150%;
+}
+
+img {
     width: 40%;
+    border-radius: 10px;
+    object-fit: contain;
 }
