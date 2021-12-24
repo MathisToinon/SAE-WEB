@@ -7,17 +7,22 @@ body{
 	width: 100%;
 	background-color: #0e0e0e;
 }
-
+h1{
+	font-family: serif;
+	font-size: 2em;
+}
 p, article, a{
 	color: white;
+}
+h2{
+	font-size: 1.5em;
+	font-family: serif;
 }
 .article_main{
 	display :flex;
 	flex-direction: column;
 	text-align: center;
-	font-size: clamp(30px,2.5vw,2.5vw);
 	width: 100%;
-	justify-content: center;
 }
 .mainArt{
 	margin: auto;
@@ -89,54 +94,6 @@ button:hover{
 	background-color: rgb(49, 49, 49);
 }
 
-/* vvvvvvvvvvv top article vvvvvvvvvvv */
-
-
-.Top_article{
-	display: flex;
-	justify-content: space-evenly;
-	background-color: #0e0e0e;
-	padding-top: 100px;
-}
- .Top_article article{
-	border-radius: 10px;
-}
-.Top_article article{
-	background-color: #1e1e1e;
-	text-align: center;
-	color: black;
-	cursor: pointer;
-	max-width: 25%;
-}
-
-article .bde-zoom{
-	display: flex;
-	margin: auto;
-}
-.bde{
-	width: 100%;
-	transition: transform .5s;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-}
-.bde-zoom{
-	width: 100%;
-	overflow: hidden;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	}
-.Top_article article:hover .bde{
-	-ms-transform: scale(2) translate(0px); /* IE 9 */
-	-webkit-transform: scale(2) translate(0px); /* Safari 3-8 */
-	transform: scale(2) translate(0px);
-}
-.Top_article article:hover{
-	background-color: #484e54;
-	
-}
-.Top_article article:hover i{
-	color: white;
-}
 .icone{
 	display: flex;
 	font-size: 150%;
@@ -148,20 +105,12 @@ article .bde-zoom{
 	color: white;
 	font-size: 0.6em;
 }
-article h3, article .icone{
+article h4, article .icone{
 	padding: 0% 3% 3% 3%;
 	color : white;
 }
-h3{
-	font-size: 0.9em;
-}
-article h2 {
-	margin: 2%;
-    text-decoration:none;
-    font-size: 1.3em;
-    color: white;
-}
-article h2:after {
+
+article h3:after {
   content: '';
   display: block;
   margin: auto;
@@ -170,7 +119,7 @@ article h2:after {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
-article:hover h2:after {
+article:hover h3:after {
   width: 50%;
   background: white;
 }
@@ -301,6 +250,10 @@ footer div {
 
 
 /* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
+
+
+
+
 
 @media screen and (max-width: 900px) {
 	button{
