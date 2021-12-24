@@ -15,8 +15,10 @@ p, article, a{
 	color: white;
 }
 h2{
-	font-size: 1.5em;
+	font-size: 1.7em;
 	font-family: serif;
+	text-align: center;
+	margin-top: 7%;
 }
 .article_main{
 	display :flex;
