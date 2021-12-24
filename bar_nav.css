@@ -187,12 +187,11 @@ article:hover h3:after {
 
  .menumodal button {
 	background-color: transparent;
-}
-.menumodal button > i{
 	font-size: 500%;
 	position: absolute;
-	top: 5%; left: 82%;
+	top: 5%; right: 12%;
 }
+
 .menumodal button > i {
 	-webkit-transition: -webkit-transform .8s ease-in-out;
 			transition:         transform .8s ease-in-out;
@@ -252,10 +251,6 @@ footer div {
 
 
 /* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
-
-
-
-
 
 @media screen and (max-width: 900px) {
 	button{
