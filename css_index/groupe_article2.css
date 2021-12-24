@@ -14,7 +14,7 @@
     height: min-content;
     text-align: center;
     max-width: 25%;
-    padding: 1%;
+    padding: 2%;
 }
 .groupArticle2 article:first-child {
     display: flex;
@@ -40,14 +40,31 @@
     margin-right: 10%;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}       
+li{
+    margin-bottom: 5px;
 }
-article.conditionacces p{
-    text-align: justify;
+.groupArticle2 p{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-
 .titre{
     text-align: left;
 }
 .groupArticle2 article>h3{
     font-size: 1em;
+}
+@media screen and (max-width: 900px) {
+    .groupArticle2{
+        flex-direction: column;
+    }
+    .groupArticle2 article:nth-child(n){
+        margin: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    li{
+        list-style-type: none;
+    }
 }
