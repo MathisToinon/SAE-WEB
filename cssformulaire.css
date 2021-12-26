@@ -17,17 +17,20 @@ form{
     padding-top: 2%;
     padding-left: 2%;
     padding-bottom: 3%;
-    padding-right: 13%;
+    padding-right: 10%;
     left: 50%;
     top: 840px;
     max-width: 60%;
-    min-width: 200px;
+    width: 250px;
     height: min-content;
     border-radius: 5px;
+    justify-content: center;
 }
-form h2{
-    font-size: 1.2em;
-    margin-bottom: 5px;
+form .role > h2, form .message > h3{
+    font-size: 1.1em;
+    margin-bottom: 9px;
+    align-self: center;
+    font-family: serif;
 }
 form div:first-child{
     display: flex;
