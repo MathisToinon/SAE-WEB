@@ -50,6 +50,10 @@ li{
 }
 .titre{
     text-align: left;
+    font-size: 1em;
+}
+ul ul li{
+    list-style-type: none;
 }
 .groupArticle2 article>h3{
     font-size: 1em;

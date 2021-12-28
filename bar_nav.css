@@ -20,6 +20,9 @@ h2{
 	text-align: right;
 	margin-top: 7%;
 }
+h4{
+	font-size: 0.9em;
+}
 .article_main{
 	display :flex;
 	flex-direction: column;
