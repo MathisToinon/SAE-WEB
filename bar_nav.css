@@ -256,7 +256,7 @@ footer div {
 /* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
 
 @media screen and (max-width: 900px) {
-	button{
+	.recherche button, .menu button, .searchbar button, .close{
 		justify-content: center;
 		align-items: center;
 		text-align: center;
@@ -267,13 +267,14 @@ footer div {
 		height: 10px;
 		padding: 20px;
 	}
-	button:hover{
+	.recherche button:hover, .menu button:hover, .searchbar button:hover, .close:hover{
 		background-color: transparent;
 	}
 	nav p{
 		display: none;
 	}
 	button.notification{
+		border: none;
 		justify-content: right;
 		align-items: center;
 		display: flex;
