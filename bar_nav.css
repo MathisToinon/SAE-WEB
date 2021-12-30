@@ -300,10 +300,8 @@ footer div {
 	}
 }
 @media screen and (max-width: 600px) {
-	button p{
-		visibility: hidden;
-	}
-	button{
+
+	.recherche button, .menu button, .searchbar button, .close{
 		justify-content: center;
 		align-items: center;
 		display: flex;
