@@ -24,6 +24,9 @@
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+.groupArticle2 article:hover{
+    transform: translate(-3%); 
+}
 .groupArticle2 article:nth-child(2){
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
