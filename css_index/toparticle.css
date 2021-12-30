@@ -52,6 +52,14 @@ article h3 {
     font-size: 1.3em;
     color: white;
 }
-h4{
+.Top_article h4{
 	font-size: 0.9em;
+}
+.Top_article h5{
+	font-size: 0.8em;
+}
+.Top_article li{
+	margin-left: 30px;
+	margin-right: 30px;
+	
 }

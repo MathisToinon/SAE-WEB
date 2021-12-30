@@ -26,10 +26,16 @@ form{
     border-radius: 5px;
     justify-content: center;
 }
-form .role > h2, form .message > h3{
-    font-size: 1.1em;
+form .role > h2{
+    font-size: 1.2em;
     margin-bottom: 9px;
     align-self: center;
+    font-family: serif;
+}
+form .message > h2{
+    font-size: 1.2em;
+    margin-bottom: 9px;
+    text-align: left;
     font-family: serif;
 }
 form div:first-child{

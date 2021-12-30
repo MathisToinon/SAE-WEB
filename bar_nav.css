@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: arial;
+	color: white;
 }
 body{
 	width: 100%;
@@ -22,6 +23,9 @@ h2{
 }
 h4{
 	font-size: 0.9em;
+}
+li{
+	font-family: serif;
 }
 .article_main{
 	display :flex;
@@ -214,23 +218,31 @@ article:hover h3:after {
 }
 /*--------------------------footer------------------------------------*/
 footer{
-	margin-top: 10%;
+	margin-top: 4%;
 	padding: 30px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #0e0e0e;
 	color: white;
 }
-footer div {
-	display: flex;
-	justify-content: center;
-}
 .excellence-techno{
-	padding-bottom: 10%;
-	max-width: 25%;
+	padding-bottom: 5%;
+	max-width: 30%;
 }
-
+footer div a{
+	padding: 3px;
+}
+footer div{
+	min-width: 230px;
+}
+footer div{
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+}
+footer div:last-child{
+	font-size: 2em;
+}
 /* vvvvvvvvvvv animation keyframes vvvvvvvvvvv */
 
 @keyframes movingTopToBottom {
@@ -285,9 +297,7 @@ footer div {
 		visibility: visible;
 		padding: 20px;
 	}
-	button p{
-		visibility: visible;
-	}
+	
 	.Top_article
 	{
 		flex-direction: column;

@@ -43,6 +43,7 @@
 }       
 li{
     margin-bottom: 5px;
+    font-size: 1em;
 }
 .groupArticle2 p{
     margin-top: 2%;
@@ -58,6 +59,17 @@ ul ul li{
 .groupArticle2 article>h3{
     font-size: 1em;
 }
+
+/*-------------------------------------------------article FUTUR---------------------------------------------------*/
+article.futur h4{
+    padding: 10px;
+}
+.groupArticle2 h5{
+    text-align: left;
+    padding-bottom: 2%;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 900px) {
     .groupArticle2{
         flex-direction: column;
@@ -67,6 +79,7 @@ ul ul li{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+        max-width: 70%;
     }
     li{
         list-style-type: none;
