@@ -12,6 +12,24 @@
 	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
 	<script src="navbar.js"></script>
 	<!-- <script src="js.js"></script> -->
+	<script>
+		var $dialog = document.getElementById('mydialog');
+		if (!('show' in $dialog)) {
+			document.getElementById('promptCompat').className = 'no_dialog';
+		}
+		$dialog.addEventListener('close', function () {
+			console.log('Fermeture. ', this.returnValue);
+		});
+	
+	
+	var $dialog2 = document.getElementById('mydialog2');
+		if (!('show' in $dialog2)) {
+			document.getElementById('promptCompat2').className = 'no_dialog2';
+		}
+		$dialog2.addEventListener('close', function () {
+			console.log('Fermeture. ', this.returnValue);
+		});
+	</script>
 </head>
 
 <body>
@@ -37,7 +55,7 @@
 	<header>
 		<nav id="nav" class="isTop">
 			<div class="cote-G">
-				<img class="logo" src="image/logo_iut_fondnoir2.png">
+				<img class="logo" src="image/logo_iut_fondnoir2.png" alt="Batiment de l'iut">
 				<p>L'excellence technologique</p>
 			</div>
 			<div class="cote-D">
@@ -47,13 +65,13 @@
 				<div class="recherche">
 					<button onclick="$dialog2.showModal()">
 						<i class="fas fa-search"></i>
-						<p>Recherche</p>
+						Recherche
 					</button>
 				</div>
 				<div class="menu">
 					<button onclick="$dialog.showModal()">
 						<i class="fas fa-bars"></i>
-						<p>Menu</p>
+						Menu
 					</button>
 				</div>
 			</div>
@@ -68,7 +86,7 @@
 	<div class="Top_article">
 
 		<article class="article_1">
-			<div class="bde-zoom"><img src="image/BUT.jpg" class="bde"></div>
+			<div class="bde-zoom"><img src="image/BUT.jpg" class="bde" alt="logo BUT"></div>
 
 			<h3>Le BUT c'est quoi ?</h3>
 			<h4>Le BUT qui signifie Bachelor Universitaire de Technologie et remplace 
@@ -85,7 +103,7 @@
 		</article>
 
 		<article class="article_2">
-			<div class="bde-zoom"><img src="image/BUT_info.jpg" class="bde"></div>
+			<div class="bde-zoom"><img src="image/BUT_info.jpg" class="bde" alt="logo BUT info"></div>
 			<h3>Le BUT informatique c'est quoi ?</h3>
 			<h4>Cette formation prépare aux métiers du numérique et qui est composé à la 
 				fois de cours pratique et théorique. De plus elle vise à acquerir des 
@@ -106,7 +124,7 @@
 		</article>
 
 		<article class="article_3">
-			<div class="bde-zoom"><img src="image/iutface.jpg" class="bde"></div>
+			<div class="bde-zoom"><img src="image/iutface.jpg" class="bde" alt="Acceuil de l'IUT feyssine"></div>
 			<h3>L'IUT informatique à la Doua</h3>
 			<h4>Joseph P. Gone, the new faculty director of the Harvard University Native American Program (HUNAP), is a
 				1992 graduate of Harvard College who returned to the University last year as professor of anthropology
@@ -123,15 +141,15 @@
 			<h3>Es-tu fait pour le BUT informatique ?</h3>
 			<p>Cette formation s'adresse plus particulièrement aux Bachelier.e.s sortant d'une formation :</p>
 			<ul>
-				<li class="titre">Général :</li>
+				<li class="titre">Général :
 					<ul>
 						<li>Spécialité Mathématiques / Science de L'ingénieur / Physique</li>
 					</ul>
-				<li class="titre">Technologique :</li>
+				<li class="titre">Technologique :
 				<ul>
 					<li>STI2D</li>
 				</ul>
-				<li class="titre">Réorientation :</li>
+				<li class="titre">Réorientation :
 				<ul>
 					<li>L1 / CPGE / Medecine / STAPS / ...</li>
 				</ul>
@@ -175,7 +193,7 @@
 				Tilio charrier | Mathis Toinon
 			</p>
 		</div>
-		<img class="excellence-techno" src="image/LOGO_HR_EC2.png">
+		<img class="excellence-techno" src="image/LOGO_HR_EC2.png" alt="logo représentant l'excelence technologique de l'iut">
 		<div>
 				<p>
 					<a href="https://www.facebook.com/IUTLyon1" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -187,23 +205,3 @@
 
 
 </html>
-
-
-<script>
-	var $dialog = document.getElementById('mydialog');
-	if (!('show' in $dialog)) {
-		document.getElementById('promptCompat').className = 'no_dialog';
-	}
-	$dialog.addEventListener('close', function () {
-		console.log('Fermeture. ', this.returnValue);
-	});
-
-
-var $dialog2 = document.getElementById('mydialog2');
-	if (!('show' in $dialog2)) {
-		document.getElementById('promptCompat2').className = 'no_dialog2';
-	}
-	$dialog2.addEventListener('close', function () {
-		console.log('Fermeture. ', this.returnValue);
-	});
-</script>
