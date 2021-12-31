@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-	<title></title>
+	<title>à propos</title>
 	<link rel="stylesheet" type="text/css" href="css_general/all.css">
     <link rel="stylesheet" type="text/css" href="cssformulaire.css">
 	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
     <header>
         <nav id="nav" class="isTop">
             <div class="cote-G">
-                <img class="logo" src="image/logo_iut_fondnoir2.png">
+                <img class="logo" src="image/logo_iut_fondnoir2.png" alt="Batiment de l'iut">
                 <p>L'excellence technologique</p>
             </div>
             <div class="cote-D">
@@ -44,13 +44,13 @@
                 <div class="recherche">
                     <button onclick="$dialog2.showModal()">
                         <i class="fas fa-search"></i>
-                        <p>Recherche</p>
+                        Recherche
                     </button>
                 </div>
                 <div class="menu">
                     <button onclick="$dialog.showModal()">
                         <i class="fas fa-bars"></i>
-                        <p>Menu</p>
+                        Menu
                     </button>
                 </div>
             </div>
@@ -62,8 +62,8 @@
 		</div>
 	</header>
     <div class="section_apropos">
-        <img src="image/iut_3.jpg">
-        <form action="" method="post">
+        <img src="image/iut_3.jpg" alt="iut de face">
+        <form action="page-traitement.php" method="post" autocomplete="on">
             <div class="role">
                 <h2>Qui êtes vous ?</h2>
                 <div>   
@@ -79,8 +79,8 @@
                     <label for="professeur">Enseignant</label>
                 </div>
                 <div>
-                    <input type="radio" id="professeur" name="role" value="professeur">
-                    <label for="professeur">Autres</label>
+                    <input type="radio" id="autre" name="role" value="autre">
+                    <label for="autre">Autre</label>
                 </div>
             </div>
             <div class="mail">
@@ -91,8 +91,9 @@
                 <h2>Votre Message :</h2>
                 <input type="text" id="message" name="message">
             </div>
-            <div class="button">
-                <button type="submit">Envoyer</button>
+            <div>
+                <input type="submit" id="submit">
+                <label for="submit">Envoyer</label>
             </div> 
             
         </form>
@@ -105,7 +106,7 @@
 				Tilio charrier | Mathis Toinon
 			</p>
 		</div>
-		<img class="excellence-techno" src="image/LOGO_HR_EC2.png">
+		<img class="excellence-techno" src="image/LOGO_HR_EC2.png" alt="logo représentant l'excelence technologique de l'iut">
 		<div>
 				<p>
 					<a href="https://www.facebook.com/IUTLyon1" target="_blank"><i class="fab fa-facebook"></i></a>
