@@ -209,14 +209,22 @@ footer div a{
 	padding: 3px;
 }
 
-footer div{
+footer div:first-child, footer div:last-child{
 	display: flex;
 	flex-direction: column-reverse;
 	text-align: center;
 	min-width: 230px;
 }
-footer div:last-child{
-	font-size: 2em;
+footer h3{
+	font-size: 3em;
+	padding-bottom: 50px;
+}
+footer p{
+	font-size: 1.1em;
+}
+footer h3 + p{
+	font-size: 1.9em;
+	text-align: center;
 }
 /* vvvvvvvvvvv animation keyframes vvvvvvvvvvv */
 
