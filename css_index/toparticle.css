@@ -10,17 +10,16 @@
 }
  .Top_article article{
 	border-radius: 10px;
-}
-.Top_article a{
-	text-decoration: none;
-}
-.Top_article article{
 	background-color: #1e1e1e;
 	text-align: center;
 	color: black;
 	cursor: pointer;
 	max-width: 25%;
 }
+.Top_article a{
+	text-decoration: none;
+}
+
 
 article .bde-zoom{
 	display: flex;
@@ -50,12 +49,7 @@ article .bde-zoom{
 .Top_article article:hover i{
 	color: white;
 }
-article h3 {
-	margin: 2%;
-    text-decoration:none;
-    font-size: 1.3em;
-    color: white;
-}
+
 .Top_article h4{
 	font-size: 0.9em;
 }
@@ -68,6 +62,26 @@ article h3 {
 	
 }
 
+
+article h3 {
+	margin: 2%;
+    text-decoration:none;
+    font-size: 1.3em;
+    color: white;
+}
+article h3:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+article:hover h3:after {
+  width: 50%;
+  background: white;
+}
 
 
 .icone{
@@ -82,18 +96,4 @@ article h3 {
 }
 article h4, article .icone{
 	padding: 0% 3% 3% 3%;
-}
-
-article h3:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-article:hover h3:after {
-  width: 50%;
-  background: white;
 }

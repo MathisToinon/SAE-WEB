@@ -94,6 +94,21 @@ nav p{
 button:hover{
 	background-color: rgb(49, 49, 49);
 }
+/*--------------------------------------------------article header-----------------------------------------------*/
+.article_main{
+	display :flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+}
+.mainArt{
+	margin: auto;
+	width: 50%;
+}
+.mainArt h2{
+	text-align: right;
+	margin-top: 7%;
+}
 
 /* vvvvvvvvvvv fenetre recherche modal vvvvvvvvvvv */
 
@@ -108,7 +123,7 @@ button:hover{
 	top: 0px;
 	animation: opacity 0.5s ease;
 	outline: oldlace;
-	
+	z-index: 2;
 }
 
 .searchbar input {
@@ -140,9 +155,6 @@ button:hover{
 	z-index: 3;
 }
 
-.searchbar{
-	z-index: 2;
-}
 
  .menumodal button {
 	background-color: transparent;
@@ -196,13 +208,12 @@ footer{
 footer div a{
 	padding: 3px;
 }
-footer div{
-	min-width: 230px;
-}
+
 footer div{
 	display: flex;
 	flex-direction: column-reverse;
 	text-align: center;
+	min-width: 230px;
 }
 footer div:last-child{
 	font-size: 2em;
@@ -228,7 +239,6 @@ footer div:last-child{
 }
 
 
-
 /* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
 
 @media screen and (max-width: 900px) {
@@ -242,19 +252,14 @@ footer div:last-child{
 		height: 10px;
 		padding: 20px;
 	}
-	.recherche button:hover, .menu button:hover, .searchbar button:hover, .close:hover{
-		background-color: transparent;
-	}
 	nav p{
 		display: none;
 	}
 	button.notification{
 		border: none;
 		justify-content: right;
-		align-items: center;
 		display: flex;
 		background-color: transparent;
-		color: rgb(209, 12, 12);
 		width:  0px;
 		height: 0px;
 		visibility: visible;
@@ -274,16 +279,7 @@ footer div:last-child{
 	.excellence-techno{
 		display: none;
 	}
-}
-@media screen and (max-width: 600px) {
-
-	button{
-		justify-content: center;
-		align-items: center;
-		display: flex;
-		background-color: transparent;
-		width:  20px;
-		height: 40px;
-		padding: 10px;
+	footer{
+		height: 100px;
 	}
 }
