@@ -202,8 +202,6 @@ footer{
 	justify-content: space-between;
 	background-color: #0e0e0e;
 }
-
-
 footer div a{
 	padding: 3px;
 }
@@ -214,7 +212,7 @@ footer div:first-child, footer div:last-child{
 	text-align: center;
 	min-width: 230px;
 }
-footer em{
+footer h3{
 	font-size: 3em;
 	padding-bottom: 9%;
 	text-align: center;
@@ -222,7 +220,7 @@ footer em{
 footer p{
 	font-size: 1.1em;
 }
-footer em + p{
+footer h3 + p{
 	font-size: 1.9em;
 	text-align: center;
 }
