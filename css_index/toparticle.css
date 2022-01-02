@@ -50,9 +50,6 @@ article .bde-zoom{
 	color: white;
 }
 
-.Top_article h4{
-	font-size: 0.9em;
-}
 .Top_article h5{
 	font-size: 0.8em;
 }
@@ -67,7 +64,6 @@ article h3 {
 	margin: 2%;
     text-decoration:none;
     font-size: 1.3em;
-    color: white;
 }
 article h3:after {
   content: '';
