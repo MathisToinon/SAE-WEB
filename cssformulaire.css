@@ -3,23 +3,24 @@ form{
 }
 .section_apropos{
     margin-left: 5%;
-    height: 90vh;
-}
-.section_apropos img{
-    position: absolute;
-    top: 750px;
-    max-width: 60%;
+    background-image: url("image/iut_3.jpg");
+    width: 900px;
+    height: 600px;
+    background-size: cover;
     border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
+
 form{
+    position: relative;
     background-color: #1d1d1d;
-    position: absolute;
     padding-top: 2%;
     padding-left: 2%;
     padding-bottom: 3%;
     padding-right: 10%;
-    left: 50%;
-    top: 840px;
+    left: 70%;
+    top: 40px;
     max-width: 60%;
     width: 250px;
     height: min-content;
@@ -86,15 +87,17 @@ div.role div input, div.role div label{
 /*----------------------------MEDIA----------------------------*/
 
 @media screen and (max-width: 1100px) {
-    .section_apropos img{
-        display: none;
+    .section_apropos{
+        background: none;
+        width: 100%;
+        height: min-content;
     }
     .section_apropos{
+        margin-left: 0;
         display: flex;
         justify-content: center;
     }
     form{
-        margin-top: 10%;
         position: static;
     }
 }

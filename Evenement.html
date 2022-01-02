@@ -15,54 +15,54 @@
 </head>
 
 <body>
-	<dialog id="mydialog">
-		<div class="menumodal">
-			<a class="pageouverte" href="index.html">Accueil</a>
-			<a href="Evenement.html">Evenement</a>
-			<a href="details.html">Plus de détails</a>
-			<a href="questionnaire.html">Nous contacter</a>
-			<button class="close" id="hide">
-				<i class="fas fa-times"></i>
-			</button>	
-		</div>
-	</dialog>
+	<header>
+		<dialog id="mydialog">
+			<div class="menumodal">
+				<a  href="index.html">Accueil</a>
+				<a class="page-ouverte" href="Evenement.html">Evenement</a>
+				<a href="details.html">Plus de détails</a>
+				<a  href="questionnaire.html">Nous contacter</a>
+				<button class="close" id="hide">
+					<i class="fas fa-times"></i>
+				</button>	
+			</div>
+		</dialog>
 
-	<dialog id="mydialog2">
-		<div class="searchbar">
-			<input type="text" id="search" name="search" required minlength="1" maxlength="20">
-			<button class="close" id="hide2">
-				<i class="fas fa-times"></i>
-			</button>
-		</div>
-	</dialog>
-
-    <header>
-        <nav id="nav" class="isTop">
-            <div class="cote-G">
-                <img class="logo" src="image/logo_iut_fondnoir2.png" alt="Batiment de l'iut">
-                <p>L'excellence technologique</p>
-            </div>
-            <div class="cote-D">
-                <button class="notification">
-                    <i class="fas fa-bell"></i>
+		<dialog id="mydialog2">
+			<div class="searchbar">
+				<input type="text" id="search" name="search" required minlength="1" maxlength="20">
+				<button class="close" id="hide2">
+					<i class="fas fa-times"></i>
 				</button>
-                <div class="recherche">
-                    <button onclick="$dialog2.showModal()">
+			</div>
+		</dialog>
+
+		<nav id="nav" class="isTop">
+			<div class="cote-G">
+				<img class="logo" src="image/logo_iut_fondnoir2.png" alt="Batiment de l'iut">
+				<p>L'excellence technologique</p>
+			</div>
+			<div class="cote-D">
+				<button class="notification">
+					<i class="fas fa-bell"></i>
+				</button>
+				<div class="recherche">
+					<button id="show2">
 						<i class="fas fa-search"></i>
 						Recherche
 					</button>
-                </div>
-                <div class="menu">
-                    <button onclick="$dialog.showModal()">
+				</div>
+				<div class="menu">
+					<button id="show">
 						<i class="fas fa-bars"></i>
 						Menu
 					</button>
-                </div>
-            </div>
-        </nav>
+				</div>
+			</div>
+		</nav>
 		<div class="article_main">
 			<article class="mainArt">
-                <h1>De nombreux évenement sont organisé par l'IUT ou bien par le BDE ...</h1>
+				<h1>De nombreux évènements sont organisés par l'IUT ou bien par le BDE ...</h1>
 			</article>
 		</div>
 	</header>
@@ -115,7 +115,7 @@
 
     <my-footer></my-footer>
 
-	<script type="text/JavaScript">
+	<script>
 		(function() {  
 			   var dialog = document.getElementById('mydialog');  
 			   document.getElementById('show').onclick = function() { dialog.show();  

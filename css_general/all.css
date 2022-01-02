@@ -45,6 +45,9 @@ header{
 	display: flex;
 	justify-content: center;
 }
+.page-ouverte{
+	color: rgb(95, 95, 95);
+}
 
 button.notification{
 	visibility: hidden;
@@ -67,7 +70,9 @@ button.notification{
 	background-color: rgba(255, 255, 255, 0);
 	transition: 0.3s;
 }
-
+.cote-G{
+	padding-left: 3px;
+}
 .cote-D, .cote-G{
 	display: flex;
 }
@@ -78,7 +83,8 @@ button{
 	align-items: center;
 	display: flex;
 	background-color: black;
-	color: white;
+	font-size: 1em;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	width:  200px;
 	height: 75px;
 	cursor: pointer;
@@ -132,6 +138,9 @@ article:hover h3:after {
   background: white;
 }
 
+
+
+
 .menumodal a:after {
   content: '';
   display: block;
@@ -143,7 +152,7 @@ article:hover h3:after {
 }
 .menumodal a:hover:after {
   width: 100%;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 /* vvvvvvvvvvv fenetre recherche modal vvvvvvvvvvv */
@@ -198,7 +207,7 @@ article:hover h3:after {
 
  .menumodal button {
 	background-color: transparent;
-	font-size: 500%;
+	font-size: 4em;
 	position: absolute;
 	top: 5%; right: 12%;
 }
@@ -222,16 +231,15 @@ article:hover h3:after {
 }
 /*--------------------------footer------------------------------------*/
 footer{
-	padding-top: 4%;
-	padding: 30px;
+	padding-top: 40px;
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	background-color: #0e0e0e;
 	color: white;
 }
 .excellence-techno{
-	padding-bottom: 5%;
-	max-width: 30%;
+	max-width: 350px;
 }
 footer div a{
 	padding: 3px;
