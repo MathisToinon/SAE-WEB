@@ -245,7 +245,7 @@ footer h3 + p{
 }
 
 
-/* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
+/* --------------------media----------------------*/
 
 @media screen and (max-width: 900px) {
 	button{
@@ -271,7 +271,7 @@ footer h3 + p{
 		visibility: visible;
 		padding: 20px;
 	}
-	
+	/*---------------------top article-----------------------*/
 	.Top_article
 	{
 		flex-direction: column;

@@ -71,7 +71,7 @@ div.role div input, div.role div label{
     
     
 }
-.button input{
+.button button{
     border: none;
 	justify-content: center;
 	align-items: center;
