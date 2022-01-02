@@ -206,6 +206,7 @@ footer div:first-child, footer div:last-child{
 }
 footer h3{
 	font-size: 3em;
+	padding-top: 6%;
 	padding-bottom: 9%;
 	text-align: center;
 }
