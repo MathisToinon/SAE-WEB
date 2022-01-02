@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Evenement</title>
@@ -8,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="cssevenement.css">
 
 	<script src="webcomponant/footer.js" defer></script>
-	
+
 	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
 	<script src="navbar.js"></script>
 </head>
@@ -17,13 +18,13 @@
 	<header>
 		<dialog id="mydialog">
 			<div class="menumodal">
-				<a  href="index.html">Accueil</a>
+				<a href="index.html">Accueil</a>
 				<a class="page-ouverte" href="Evenement.html">Evenement</a>
 				<a href="details.html">Plus de détails</a>
-				<a  href="questionnaire.html">Nous contacter</a>
+				<a href="questionnaire.html">Nous contacter</a>
 				<button class="close" id="hide">
 					<i class="fas fa-times"></i>
-				</button>	
+				</button>
 			</div>
 		</dialog>
 
@@ -66,17 +67,22 @@
 		</div>
 	</header>
 
-    <div class="wrapper">
+	<div class="wrapper">
 		<article class="event">
 			<img src="image/bde.jpg" alt="logo du BDE">
 			<div>
 				<h2>Le BDE</h2>
 				<p>
-					L’association a été fondée par des étudiants du département Informatique de l’IUT du site de Villeurbanne Doua. 
-					C’est une association de loi 1901, elle est à but non lucratif. Elle fut fondée pour permettre, à l’aide de 
-					diverses manifestations, aux étudiants du département Informatique de l’IUT de mieux se connaitre et de développer 
-					au sein de l’établissement des liens plus étroits de scolarité. Elle est d'ailleurs présente lors du weekend
-					de formation (WEF), du weekend de cohésion (WECOF), mais collabore aussi avec les autres bureaux associatifs dans
+					L’association a été fondée par des étudiants du département Informatique de l’IUT du site de
+					Villeurbanne Doua.
+					C’est une association de loi 1901, elle est à but non lucratif. Elle fut fondée pour permettre, à
+					l’aide de
+					diverses manifestations, aux étudiants du département Informatique de l’IUT de mieux se connaitre et
+					de développer
+					au sein de l’établissement des liens plus étroits de scolarité. Elle est d'ailleurs présente lors du
+					weekend
+					de formation (WEF), du weekend de cohésion (WECOF), mais collabore aussi avec les autres bureaux
+					associatifs dans
 					l'élaboration et la gestion d'évènement.
 				</p>
 			</div>
@@ -86,14 +92,14 @@
 			<div>
 				<h2>La Nuit De L'Informatique</h2>
 				<p>
-					Il s'agit d'une compétition nationale qui se déroule du jeudi à 16h40 
-					au Vendredi à 08h00 à laquelle peuvent participer tous les étudiants 
+					Il s'agit d'une compétition nationale qui se déroule du jeudi à 16h40
+					au Vendredi à 08h00 à laquelle peuvent participer tous les étudiants
 					qui s'inscrivent en équipe.<br>
-					Leur objectif est de développer une application 
-					répondant à une thématique donnée qui est dévoilée à 16h40 précise. 
-					De nombreux défis annexes sont également proposés. La nuit de l’info au niveau national 
+					Leur objectif est de développer une application
+					répondant à une thématique donnée qui est dévoilée à 16h40 précise.
+					De nombreux défis annexes sont également proposés. La nuit de l’info au niveau national
 					c’est environ 3300 participants, 460 équipes, 1860 défis relevés sur 30 sites différents !
-					Au niveau local pour nous c'est aux alentours de 60 participants et participantes, dont des 
+					Au niveau local pour nous c'est aux alentours de 60 participants et participantes, dont des
 					enseignants-chercheurs de Lyon 1 présents en tout ou partie de la nuit pour accompagner les élèves
 					dans leur effort. C’est aussi à peu près 1000 euros de budget.
 				</p>
@@ -105,30 +111,36 @@
 				<h2>Weekend D'Integration</h2>
 				<p>
 					Organisé par le BDE, le week-end d'intégration se déroule comme son nom l'indique
-					pendant tout un weekend le plus tôt possible dans l'année, et permet à la promotion entrante de rencontrer du monde.
+					pendant tout un weekend le plus tôt possible dans l'année, et permet à la promotion entrante de
+					rencontrer du monde.
 					Encadré et géré par le BDE, l'évènement comprend notamment des soirées étudiantes.
 				</p>
 			</div>
 		</article>
 	</div>
 
-    <my-footer></my-footer>
+	<my-footer></my-footer>
 
 	<script>
-		(function() {  
-			   var dialog = document.getElementById('mydialog');  
-			   document.getElementById('show').onclick = function() { dialog.show();  
-		   }; 
-			 document.getElementById('hide').onclick = function() { dialog.close();  
-		  }; 
+		(function () {
+			var dialog = document.getElementById('mydialog');
+			document.getElementById('show').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide').onclick = function () {
+				dialog.close();
+			};
 		})();
-		(function() {  
-			   var dialog = document.getElementById('mydialog2');  
-			   document.getElementById('show2').onclick = function() { dialog.show();  
-		   }; 
-			 document.getElementById('hide2').onclick = function() { dialog.close();  
-		  }; 
+		(function () {
+			var dialog = document.getElementById('mydialog2');
+			document.getElementById('show2').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide2').onclick = function () {
+				dialog.close();
+			};
 		})();
-	  </script>
+	</script>
 </body>
+
 </html>

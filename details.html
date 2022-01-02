@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-       
+
 
 <head>
-    <meta charset="UTF-8">
-    <title>Détails</title>
-    <link rel="stylesheet" type="text/css" href="css_general/all.css">
-    <link rel="stylesheet" type="text/css" href="css_details/css_details.css">
-    
-    <script src="webcomponant/footer.js" defer></script>
-    
-    <script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
-    <script src="navbar.js"></script>
+	<meta charset="UTF-8">
+	<title>Détails</title>
+	<link rel="stylesheet" type="text/css" href="css_general/all.css">
+	<link rel="stylesheet" type="text/css" href="css_details/css_details.css">
+
+	<script src="webcomponant/footer.js" defer></script>
+
+	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
+	<script src="navbar.js"></script>
 </head>
 
 <body>
-    <header>
+	<header>
 		<dialog id="mydialog">
 			<div class="menumodal">
 				<a href="index.html">Accueil</a>
@@ -24,7 +24,7 @@
 				<a href="questionnaire.html">Nous contacter</a>
 				<button class="close" id="hide">
 					<i class="fas fa-times"></i>
-				</button>	
+				</button>
 			</div>
 		</dialog>
 
@@ -68,59 +68,66 @@
 		</div>
 	</header>
 
-    <div class="rail"></div>
-    <div class="firstrailshadow"></div>
+	<div class="rail"></div>
+	<div class="firstrailshadow"></div>
 
-		<article class="left">
-			<h2>Enseignement</h2>
-			<span>Les cours ont lieu de huit heures à dix-huit heures avec une pause-déjeuner de midi à quatorze heures. 
-				Les journées sont remplies par des cours de deux heures où seront enseignées les matières suivantes : <br> 
-				Mathématique, Algorithmique, Langage C, Développement Web, SQL, Base de données, Architecture des ordinateurs, 
-				Git, Économie, Communication, Projets Personnel et Professionnel. <br> 
-				Ces cours peuvent se dérouler en salle de classe par groupe d'une vingtaine d'étudiants, ou en amphithéâtre avec l'ensemble de la promotion.
-			</span>
-		</article>
+	<article class="left">
+		<h2>Enseignement</h2>
+		<span>Les cours ont lieu de huit heures à dix-huit heures avec une pause-déjeuner de midi à quatorze heures.
+			Les journées sont remplies par des cours de deux heures où seront enseignées les matières suivantes : <br>
+			Mathématique, Algorithmique, Langage C, Développement Web, SQL, Base de données, Architecture des
+			ordinateurs,
+			Git, Économie, Communication, Projets Personnel et Professionnel. <br>
+			Ces cours peuvent se dérouler en salle de classe par groupe d'une vingtaine d'étudiants, ou en amphithéâtre
+			avec l'ensemble de la promotion.
+		</span>
+	</article>
 
-		<article class="right">
-			<h2>Evaluation</h2>
-			<span>Six compétences évaluent les élèves au cours d'un semestre.<br>
-				Réaliser un développement d'applications, Optimiser des applications informatiques, 
-				Administrer des systèmes informatiques communicants complexe, Gérer des données de l'information, 
-				Conduire un projet, Travailler dans une équipe informatique.<br>
-				Les étudiants sont soumis à de nombreux devoirs surveillés dont les notes comptent pour 60% 
-				de la moyenne d'une compétence. Les 40% restants sont alloués aux six projets nommés "SAE" que doivent 
-				réaliser les étudiants durant un semestre. Afin de valider son semestre, il est nécessaire d'obtenir 
-				une moyenne minimale de huit sur vingt dans toutes les compétences, ainsi qu'une moyenne de dix sur 
-				vingt dans un minimum de trois compétences. 
-			</span>
-		</article>
+	<article class="right">
+		<h2>Evaluation</h2>
+		<span>Six compétences évaluent les élèves au cours d'un semestre.<br>
+			Réaliser un développement d'applications, Optimiser des applications informatiques,
+			Administrer des systèmes informatiques communicants complexe, Gérer des données de l'information,
+			Conduire un projet, Travailler dans une équipe informatique.<br>
+			Les étudiants sont soumis à de nombreux devoirs surveillés dont les notes comptent pour 60%
+			de la moyenne d'une compétence. Les 40% restants sont alloués aux six projets nommés "SAE" que doivent
+			réaliser les étudiants durant un semestre. Afin de valider son semestre, il est nécessaire d'obtenir
+			une moyenne minimale de huit sur vingt dans toutes les compétences, ainsi qu'une moyenne de dix sur
+			vingt dans un minimum de trois compétences.
+		</span>
+	</article>
 
-		<div class="secondrailshadow"></div>
+	<div class="secondrailshadow"></div>
 
 	<div class="map">
 		<h2>Emplacement Geopraphique</h2>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58844.67598875738!2d4.8680082137800085!3d45.790990286841094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siut%20lyon1!5e0!3m2!1sfr!2sfr!4v1641122063318!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58844.67598875738!2d4.8680082137800085!3d45.790990286841094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siut%20lyon1!5e0!3m2!1sfr!2sfr!4v1641122063318!5m2!1sfr!2sfr"
+			style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
 
 
-    <my-footer></my-footer>
-    <script>
-		(function() {  
-			   var dialog = document.getElementById('mydialog');  
-			   document.getElementById('show').onclick = function() { dialog.show();  
-		   }; 
-			 document.getElementById('hide').onclick = function() { dialog.close();  
-		  }; 
+	<my-footer></my-footer>
+	<script>
+		(function () {
+			var dialog = document.getElementById('mydialog');
+			document.getElementById('show').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide').onclick = function () {
+				dialog.close();
+			};
 		})();
-		(function() {  
-			   var dialog = document.getElementById('mydialog2');  
-			   document.getElementById('show2').onclick = function() { dialog.show();  
-		   }; 
-			 document.getElementById('hide2').onclick = function() { dialog.close();  
-		  }; 
+		(function () {
+			var dialog = document.getElementById('mydialog2');
+			document.getElementById('show2').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide2').onclick = function () {
+				dialog.close();
+			};
 		})();
-	  </script>
+	</script>
 </body>
 
 </html>
-
