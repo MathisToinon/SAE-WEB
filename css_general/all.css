@@ -202,7 +202,6 @@ footer div:first-child, footer div:last-child{
 	display: flex;
 	flex-direction: column-reverse;
 	text-align: center;
-	min-width: 230px;
 }
 footer h3{
 	font-size: 3em;
