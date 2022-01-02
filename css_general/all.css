@@ -217,7 +217,8 @@ footer div:first-child, footer div:last-child{
 }
 footer h3{
 	font-size: 3em;
-	padding-bottom: 50px;
+	padding-bottom: 9%;
+	text-align: center;
 }
 footer p{
 	font-size: 1.1em;
@@ -284,10 +285,14 @@ footer h3 + p{
 		max-width: 80%;
 		margin-bottom: 10px;
 	}
-	.excellence-techno{
-		display: none;
+	/*------------------footer------------------------*/
+	footer h3{
+		font-size: 1.8em;
 	}
-	footer{
-		height: 100px;
+	footer p{
+		font-size: 0.9em;
+	}
+	footer h3 + p{
+		font-size: 1em;
 	}
 }
