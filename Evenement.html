@@ -6,28 +6,33 @@
 	<link rel="stylesheet" type="text/css" href="articleoverflow.css">
 	<link rel="stylesheet" type="text/css" href="css_general/all.css">
 	<link rel="stylesheet" type="text/css" href="cssevenement.css">
+
+	<script src="webcomponant/footer.js" defer></script>
+	
 	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
 	<script src="navbar.js"></script>
 	<!-- <script src="js.js"></script> -->
 </head>
 
 <body>
-	<dialog id="mydialog" close>
+	<dialog id="mydialog">
 		<div class="menumodal">
-			<a href="index.html">Accueil</a>
+			<a class="pageouverte" href="index.html">Accueil</a>
 			<a href="Evenement.html">Evenement</a>
 			<a href="details.html">Plus de détails</a>
 			<a href="questionnaire.html">Nous contacter</a>
-			<button class="close" onclick="$dialog.close()">
+			<button class="close" id="hide">
 				<i class="fas fa-times"></i>
 			</button>	
 		</div>
 	</dialog>
 
-	<dialog id="mydialog2" close>
+	<dialog id="mydialog2">
 		<div class="searchbar">
 			<input type="text" id="search" name="search" required minlength="1" maxlength="20">
-			<button class="close" onclick="$dialog2.close()"><i class="fas fa-times"></i></button>
+			<button class="close" id="hide2">
+				<i class="fas fa-times"></i>
+			</button>
 		</div>
 	</dialog>
 
@@ -108,42 +113,23 @@
 		</article>
 	</div>
 
-    <footer>
-		<div>
-			<p>
-				<i class="far fa-copyright"></i>
-				Tilio charrier | Mathis Toinon
-			</p>
-		</div>
-		<img class="excellence-techno" src="image/LOGO_HR_EC2.png" alt="logo représentant l'excelence technologique de l'iut">
-		<div>
-				<p>
-					<a href="https://www.facebook.com/IUTLyon1" target="_blank"><i class="fab fa-facebook"></i></a>
-					<a href="https://www.instagram.com/iutlyon1/" target="_blank"><i class="fab fa-instagram"></i></a>	
-				</p>
-		</div>
-	</footer>
+    <my-footer></my-footer>
+
+	<script type="text/JavaScript">
+		(function() {  
+			   var dialog = document.getElementById('mydialog');  
+			   document.getElementById('show').onclick = function() { dialog.show();  
+		   }; 
+			 document.getElementById('hide').onclick = function() { dialog.close();  
+		  }; 
+		})();
+		(function() {  
+			   var dialog = document.getElementById('mydialog2');  
+			   document.getElementById('show2').onclick = function() { dialog.show();  
+		   }; 
+			 document.getElementById('hide2').onclick = function() { dialog.close();  
+		  }; 
+		})();
+	  </script>
 </body>
-
-
-
 </html>
-
-<script>
-	var $dialog = document.getElementById('mydialog');
-	if (!('show' in $dialog)) {
-		document.getElementById('promptCompat').className = 'no_dialog';
-	}
-	$dialog.addEventListener('close', function () {
-		console.log('Fermeture. ', this.returnValue);
-	});
-
-
-var $dialog2 = document.getElementById('mydialog2');
-	if (!('show' in $dialog2)) {
-		document.getElementById('promptCompat2').className = 'no_dialog2';
-	}
-	$dialog2.addEventListener('close', function () {
-		console.log('Fermeture. ', this.returnValue);
-	});
-</script>

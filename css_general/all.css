@@ -72,7 +72,7 @@ button.notification{
 	display: flex;
 }
 
-.recherche button, .menu button, .searchbar button, .close{
+button{
 	border: none;
 	justify-content: center;
 	align-items: center;
@@ -189,6 +189,11 @@ article:hover h3:after {
 	animation: movingTopToBottom 1s ease;
 	top: 0px;
 	left: 0px;
+	z-index: 3;
+}
+
+.searchbar{
+	z-index: 2;
 }
 
  .menumodal button {
@@ -267,7 +272,7 @@ footer div:last-child{
 /* vvvvvvvvvvv fenetre menu modal media vvvvvvvvvvv */
 
 @media screen and (max-width: 900px) {
-	.recherche button, .menu button, .searchbar button, .close{
+	button{
 		justify-content: center;
 		align-items: center;
 		text-align: center;
@@ -310,7 +315,7 @@ footer div:last-child{
 }
 @media screen and (max-width: 600px) {
 
-	.recherche button, .menu button, .searchbar button, .close{
+	button{
 		justify-content: center;
 		align-items: center;
 		display: flex;
