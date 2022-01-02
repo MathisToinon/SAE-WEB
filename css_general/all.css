@@ -222,7 +222,7 @@ article:hover h3:after {
 }
 /*--------------------------footer------------------------------------*/
 footer{
-	margin-top: 4%;
+	padding-top: 4%;
 	padding: 30px;
 	display: flex;
 	justify-content: space-between;
