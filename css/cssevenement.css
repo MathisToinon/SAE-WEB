@@ -3,7 +3,9 @@
 .wrapper {
     display: flex;
     flex-direction: column;
+
     align-items: center;
+
     margin-top: 50px;
 }
 
@@ -11,8 +13,11 @@
 
 .event {
     display: flex;
+
     background-color:#1e1e1e;
+
     width: 90%;
+
     border-radius: 15px;
     padding: 20px;
     margin-top: 30px;
@@ -21,6 +26,7 @@
 .event div {
     display: flex;
     flex-direction: column;
+
     margin-left: 20px;
 }
 
@@ -31,8 +37,9 @@
 .event div p {
     display: flex;
     align-items: center;
-    height: 100%;
     text-align: justify;
+
+    height: 100%;
     line-height: 150%;
 }
 

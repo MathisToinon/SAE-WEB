@@ -27,8 +27,10 @@ li{
 /*-----------------------------------------------------header------------------------------------------------------*/
 header{
 	background-image:linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 0%, rgba(14,14,14,0.35057773109243695) 70%),url("../../image/image_presentation.jpg");
-	height: 100vh;
 	background-size: cover;
+	
+	height: 100vh;
+	
 	display: flex;
 	justify-content: center;
 }
@@ -42,14 +44,19 @@ button.notification{
 }
 
 #nav{
+	position: fixed;
+
 	display: flex;
 	align-items: center;
-	width: 100%;
 	justify-content: space-between;
-	position: fixed;
-	transition: top 0.1s;
-	background-color: rgba(0, 0, 0, 0.377);
+	
+	width: 100%;
+
 	transition: 0.3s;
+	transition: top 0.1s;
+
+	background-color: rgba(0, 0, 0, 0.377);
+	
 	z-index: 1;
 }
 
@@ -70,11 +77,11 @@ button div{
 button{
 	border: none;
 	align-items: center;
+	cursor: pointer;
 	background-color: black;
+
 	width:  200px;
 	height: 75px;
-	cursor: pointer;
-	
 }
 nav i{
 	margin-right: 10px;
@@ -87,6 +94,7 @@ img.logo{
 }
 nav p{
 	margin-left: 50px;
+
 	display: flex;
 	align-items: center;
 }
@@ -98,6 +106,7 @@ button:hover{
 	display :flex;
 	flex-direction: column;
 	text-align: center;
+
 	width: 100%;
 }
 .mainArt{
@@ -113,21 +122,27 @@ button:hover{
 
 .searchbar {
 	display: flex;
-	width:  500px;
-	height: 75px;
+
 	position: fixed;
 	right: 200px;
 	top: 0px;
-	animation: opacity 0.5s ease;
-	outline: oldlace;
 	z-index: 2;
+
+	width:  500px;
+	height: 75px;
+	
+	animation: opacity 0.5s ease;
+	
+	outline: oldlace;
 }
 
 .searchbar input {
-	width: 300px;
 	background-color: black;
 	border: none;
+
 	padding-left: 20px;
+	width: 300px;
+
 	font-size: 1em;
 	border-bottom-left-radius: 10px;
 }
@@ -137,24 +152,31 @@ button:hover{
 .menumodal{
 	display: flex;
 	flex-direction: column;
-	position: fixed;
-	background-color: #0e0e0e;
-	width: 100%;
-	height: 100%;
 	justify-content: space-evenly;
-	padding-left: 10%;
-	animation: movingTopToBottom 1s ease;
+
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	z-index: 3;
+	
+	background-color: #0e0e0e;
+
+	width: 100%;
+	height: 100%;
+	padding-left: 10%;
+
+	animation: movingTopToBottom 1s ease;
+	
 }
 
 
  .menumodal button {
-	background-color: transparent;
-	font-size: 4em;
 	position: absolute;
 	top: 5%; right: 12%;
+	
+	font-size: 4em;
+
+	background-color: transparent;
 }
 
 .menumodal button > i {
@@ -176,12 +198,16 @@ button:hover{
 .menumodal a:after {
   content: '';
   display: block;
+
   margin: auto;
   height: 3px;
   width: 0;
+
   background: transparent;
+
   transition: width .5s ease, background-color .5s ease;
 }
+
 .menumodal a:hover:after {
   width: 100%;
   background: white;
@@ -190,8 +216,10 @@ button:hover{
 footer{
 	padding-top: 40px;
 	padding: 20px;
+
 	display: flex;
 	justify-content: space-between;
+
 	background-color: #0e0e0e;
 }
 footer div a{
@@ -201,12 +229,15 @@ footer div a{
 footer div:first-child, footer div:last-child{
 	display: flex;
 	flex-direction: column-reverse;
+
 	text-align: center;
 }
 footer h3{
 	font-size: 3em;
+
 	padding-top: 10%;
 	padding-bottom: 9%;
+
 	text-align: center;
 }
 footer p{
@@ -241,11 +272,13 @@ footer h3 + p{
 
 @media screen and (max-width: 900px) {
 	button{
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		display: flex;
+		
 		background-color: transparent;
+
 		width:  80px;
 		height: 10px;
 		padding: 20px;
@@ -258,12 +291,15 @@ footer h3 + p{
 	}
 	button.notification{
 		border: none;
-		justify-content: right;
+		
 		display: flex;
+		justify-content: right;
+		
 		background-color: transparent;
+		visibility: visible;
+
 		width:  0px;
 		height: 0px;
-		visibility: visible;
 		padding: 20px;
 	}
 	/*---------------------top article-----------------------*/

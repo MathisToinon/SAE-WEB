@@ -1,28 +1,33 @@
 .image-transition{
     height: 200px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 0 center;
-  background-image: url("../../image/transtion.jpg");
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 center;
+    background-image: url("../../image/transtion.jpg");
 }
 .groupArticle2{
     padding-top: 5%;
     padding-bottom: 5%;
-    display: flex;
-    flex-wrap: wrap;
     padding-left: 7%;
     padding-right: 7%;
+
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+
     background-color: #1e1e1e;
 }
 .groupArticle2 article{
     background-color: #131313;
-    height: min-content;
-    text-align: center;
+
     max-width: 30%;
+
+    text-align: center;
+    
     padding: 2%;
     margin: 10px;
-    min-height: 287px;
+    
 }
 .groupArticle2 article:hover{
     transform: scale(1.07); 
@@ -31,6 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -85,6 +91,7 @@ article.futur h4{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+        
         max-width: 70%;
     }
     li{
