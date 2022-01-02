@@ -11,7 +11,7 @@ class MyFooter extends HTMLElement {
                 </p>
             </div>
             <div>
-                <h3>IUT LYON 1</h3>
+                <em>IUT LYON 1</em>
                  <p>
                     <a href="https://www.facebook.com/IUTLyon1" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/iutlyon1/" target="_blank"><i class="fab fa-instagram"></i></a>	

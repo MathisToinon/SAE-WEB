@@ -202,9 +202,8 @@ footer{
 	justify-content: space-between;
 	background-color: #0e0e0e;
 }
-.excellence-techno{
-	max-width: 350px;
-}
+
+
 footer div a{
 	padding: 3px;
 }
@@ -215,7 +214,7 @@ footer div:first-child, footer div:last-child{
 	text-align: center;
 	min-width: 230px;
 }
-footer h3{
+footer em{
 	font-size: 3em;
 	padding-bottom: 9%;
 	text-align: center;
@@ -223,7 +222,7 @@ footer h3{
 footer p{
 	font-size: 1.1em;
 }
-footer h3 + p{
+footer em + p{
 	font-size: 1.9em;
 	text-align: center;
 }
