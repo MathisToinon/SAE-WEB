@@ -11,9 +11,7 @@
 
 .event {
     display: flex;
-    flex-direction: row;
     background-color:#1e1e1e;
-    height: fit-content;
     width: 90%;
     border-radius: 15px;
     padding: 20px;
@@ -32,8 +30,7 @@
 
 .event div p {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     height: 100%;
     text-align: justify;
     line-height: 150%;
