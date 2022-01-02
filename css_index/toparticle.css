@@ -21,23 +21,23 @@
 }
 
 
-article .bde-zoom{
+article .image-zoom{
 	display: flex;
 	margin: auto;
 }
-.bde{
+.BUT{
 	width: 100%;
 	transition: transform .5s;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 }
-.bde-zoom{
+.image-zoom{
 	width: 100%;
 	overflow: hidden;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	}
-.Top_article article:hover .bde{
+.Top_article article:hover .BUT{
 	-ms-transform: scale(2) translate(0px); /* IE 9 */
 	-webkit-transform: scale(2) translate(0px); /* Safari 3-8 */
 	transform: scale(2) translate(0px);
