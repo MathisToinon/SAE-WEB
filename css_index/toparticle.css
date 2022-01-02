@@ -67,3 +67,33 @@ article h3 {
 	margin-right: 30px;
 	
 }
+
+
+
+.icone{
+	display: flex;
+	font-size: 150%;
+	text-align: left;
+	margin-top: 5%;
+}
+.icone p{
+	margin: 2px 0 0 10px;
+	font-size: 0.6em;
+}
+article h4, article .icone{
+	padding: 0% 3% 3% 3%;
+}
+
+article h3:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+article:hover h3:after {
+  width: 50%;
+  background: white;
+}

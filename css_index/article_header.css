@@ -1,0 +1,15 @@
+/*--------------------------------------------------article header-----------------------------------------------*/
+.article_main{
+	display :flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+}
+.mainArt{
+	margin: auto;
+	width: 50%;
+}
+.mainArt h2{
+	text-align: right;
+	margin-top: 7%;
+}
