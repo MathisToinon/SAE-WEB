@@ -11,6 +11,9 @@
  .Top_article article{
 	border-radius: 10px;
 }
+.Top_article a{
+	text-decoration: none;
+}
 .Top_article article{
 	background-color: #1e1e1e;
 	text-align: center;
